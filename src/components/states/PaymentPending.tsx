@@ -24,7 +24,7 @@ export function PaymentPending({ onCancel }: Props) {
               Confirming your payment
             </h2>
             <p className="max-w-sm text-sm text-ink-300">
-              Hang tight — this usually clears in a few seconds. We’ll unlock the
+              Hang tight, this usually clears in a few seconds. We’ll unlock the
               post as soon as the charge goes through.
             </p>
           </div>

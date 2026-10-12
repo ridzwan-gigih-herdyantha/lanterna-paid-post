@@ -24,7 +24,7 @@ export function PaidPost() {
 
   const go = (s: PostState) => setState(s);
 
-  // Simulated flow helpers — intentionally fake, no real network / Stripe.
+  // Simulated flow helpers, intentionally fake, no real network / Stripe.
   const subscribe = () => {
     setState("pending");
     window.setTimeout(() => setState("subscribed"), 1800);

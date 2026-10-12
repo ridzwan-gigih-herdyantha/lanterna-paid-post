@@ -58,7 +58,7 @@ export function Locked({ post, onSubscribe }: Props) {
             </Button>
           </div>
           <p className="text-[11px] text-ink-400 pt-1">
-            Simulated checkout — no real charge.
+            Simulated checkout, no real charge.
           </p>
         </div>
       </div>

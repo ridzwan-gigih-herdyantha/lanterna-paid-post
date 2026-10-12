@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Lanterna — Paid post prototype",
+  title: "Lanterna: Paid post prototype",
   description:
     "A single-page prototype of a creator paid post, with simulated access states.",
 };
