@@ -35,7 +35,7 @@ export const samplePost: Post = {
   likes: 1284,
   comments: 96,
   tierName: "Lamplight tier",
-  tierPrice: "Rp 59.000 / month",
+  tierPrice: "€5 / month",
 };
 
 export const CREATOR = {

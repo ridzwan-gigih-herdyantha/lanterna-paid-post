@@ -38,6 +38,7 @@ export function VideoPlayer({ interactive = true, blurred = false }: Props) {
           onClick={() => setPlaying((p) => !p)}
           className={cn(
             "absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-16 w-16 sm:h-20 sm:w-20 rounded-full",
+            "flex items-center justify-center",
             "bg-ember-400 text-ink-950 shadow-[0_12px_40px_-10px_rgba(245,137,7,0.7)] ring-4 ring-ember-400/20",
             "transition-transform duration-200 hover:scale-105 active:scale-95",
             !interactive && "cursor-default opacity-90"
@@ -45,9 +46,17 @@ export function VideoPlayer({ interactive = true, blurred = false }: Props) {
           aria-label={playing ? "Pause" : "Play"}
         >
           {playing ? (
-            <Pause className="mx-auto h-7 w-7" strokeWidth={2.5} />
+            <Pause
+              className="h-7 w-7"
+              strokeWidth={0}
+              fill="currentColor"
+            />
           ) : (
-            <Play className="mx-auto ml-1 h-7 w-7" strokeWidth={2.5} />
+            <Play
+              className="h-7 w-7 translate-x-[2px]"
+              strokeWidth={0}
+              fill="currentColor"
+            />
           )}
         </button>
       )}
